@@ -1,0 +1,35 @@
+station,Water.Collection.Test.Start.Date,Reproductive.Rate..Young..U.2640..7days....Control.,X..Survival..7.days.,Assessment,stationID,Latitude,Longitude
+Ausable River @ Clintonville [ROUTINE],04-18-18/04-20-18,**3.8 (19),*20,Severely Toxic,10-SABL-14.6,44.464375000,?73.575255000
+Ausable River @ Clintonville [ROUTINE],NOT SAMPLED,N/A,N/A,N/A,10-SABL-14.6,45.464375000,?73.575255001
+Ausable River @ Clintonville [ROUTINE],08-14-18/08-17-18,24.6 (90),100,Non-toxic,10-SABL-14.6,46.464375000,?73.575255002
+Ausable River @ Clintonville [ROUTINE],10-16-18/10-19-18,**6.3 (38),100,Slightly Toxic,10-SABL-14.6,47.464375000,?73.575255003
+Boquet River @ Willsboro [ROUTINE],04-18-18/04-20-18,**8.7 (44),*40,Severely Toxic,10-BOQT-2.6,44.363890000,?73.390881000
+Boquet River @ Willsboro [ROUTINE],NOT SAMPLED,N/A,N/A,N/A,10-BOQT-2.6,45.363890000,?73.390881001
+Boquet River @ Willsboro [ROUTINE],08-14-18/08-17-18,32.6 (119),100,Non-toxic,10-BOQT-2.6,46.363890000,?73.390881002
+Boquet River @ Willsboro [ROUTINE],10-16-18/10-19-18,15.1 (90),100,Non-toxic,10-BOQT-2.6,47.363890000,?73.390881003
+Bronx River @ New York [ROUTINE],04-18-18/04-20-18,22.1 (113),60,Non-toxic,17-BRNX-5.6,40.880000000,?73.868610000
+Bronx River @ New York [ROUTINE],06-13-18/06-15-18,**7.3 (46),80,Slightly Toxic,17-BRNX-5.6,40.880000000,?73.868610001
+Bronx River @ New York [ROUTINE],08-13-18/08-17-18,36.9 (135),100,Non-toxic,17-BRNX-5.6,40.880000000,?73.868610002
+Bronx River @ New York [ROUTINE],10-15-18/10-19-18,**10.2 (61),100,Slightly Toxic,17-BRNX-5.6,40.880000000,?73.868610003
+Carmans River @ Brookhaven [ROUTINE],04-18-18/04-20-18,12.2 (62),60,Non-toxic,17-CARM-9.0,40.830000000,?72.906940000
+Carmans River @ Brookhaven [ROUTINE],06-13-18/06-15-18,**4.4 (28),*60,Severely Toxic,17-CARM-9.0,41.830000000,?72.906940001
+Carmans River @ Brookhaven [ROUTINE],08-13-18/08-17-18,28.6 (104),100,Non-toxic,17-CARM-9.0,42.830000000,?72.906940002
+Carmans River @ Brookhaven [ROUTINE],10-15-18/10-19-18,**7.5 (45),100,Slightly Toxic,17-CARM-9.0,43.830000000,?72.906940003
+Saranac River @ Plattsburgh [ROUTINE],04-18-18/04-20-18,**9.2 (47),70,Slightly Toxic,10-SARA-0.4,44.697538000,?73.450850000
+Saranac River @ Plattsburgh [ROUTINE],NOT SAMPLED,N/A,N/A,N/A,10-SARA-0.4,45.697538000,?73.450850001
+Saranac River @ Plattsburgh [ROUTINE],08-14-18/08-17-18,**16.6 (59),90,Slightly Toxic,10-SARA-0.4,46.697538000,?73.450850002
+Saranac River @ Plattsburgh [ROUTINE],10-16-18/10-19-18,**5.2 (33),80,Slightly Toxic,10-SARA-0.4,47.697538000,?73.450850003
+Susquehanna River @ Vestal [ ROUTINE],04-17-18/04-20-18,13.2 (67),80,Non-toxic,06-SUSQ-31.4,42.090970000,?76.055787000
+Susquehanna River @ Vestal [ ROUTINE],06-12-18/06-15-18,14.0 (88),70,Non-toxic,06-SUSQ-31.4,43.090970000,?76.055787001
+Susquehanna River @ Vestal [ ROUTINE],08-13-18/08-17-18,24.9 (88),100,Non-toxic,06-SUSQ-31.4,44.090970000,?76.055787002
+Susquehanna River @ Vestal [ ROUTINE],10-16-18/10-19-18,**7.3 (46),90,Slightly Toxic,06-SUSQ-31.4,45.090970000,?76.055787003
+Tioughnioga River @ Blodgett Mills [ROUTINE],04-17-18/04-20-18,17.4 (89),80,Non-toxic,06-TOGH-32.8,42.568252000,?76.121111000
+Tioughnioga River @ Blodgett Mills [ROUTINE],06-12-18/06-15-18,13.7 (86),*60,Moderately Toxic,06-TOGH-32.8,43.568252000,?76.121111001
+Tioughnioga River @ Blodgett Mills [ROUTINE],08-13-18/08-17-18,29.7 (105),100,Non-toxic,06-TOGH-32.8,44.568252000,?76.121111002
+Tioughnioga River @ Blodgett Mills [ROUTINE],10-16-18/10-19-18,**9.4 (59),90,Slightly Toxic,06-TOGH-32.8,45.568252000,?76.121111003
+Unadilla River @ Rockdale [ROUTINE],04-18-18/04-20-18,**9.1 (46),*40,Severely Toxic,06-DILA-5.4,42.378737000,?75.406399000
+Unadilla River @ Rockdale [ROUTINE],06-14-18/06-15-18,12.6 (79),70,Non-toxic,06-DILA-5.4,43.378737000,?75.406399001
+Unadilla River @ Rockdale [ROUTINE],08-14-18/08-17-18,33.6 (118),100,Non-toxic,06-DILA-5.4,44.378737000,?75.406399002
+Unadilla River @ Rockdale [ROUTINE],10-16-18/10-19-18,**9.1 (57),100,Slightly Toxic,06-DILA-5.4,45.378737000,?75.406399003
+,,,,,,,
+,,,,,,,

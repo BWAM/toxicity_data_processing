@@ -1,0 +1,51 @@
+station,Sediment.Collection.Test.Date,Sediment.Assessment,Porewater.Assessment,Sediment.EC50....,Porewater.EC50....,stationID,Latitude,Longitude
+East Koy Creek-Pike [SCREENING],07-24-19/09-05 & 06-19,Slightly Toxic,Non-toxic,47.60,> 100,04-EKOY-2.2,42.540940,-78.097890
+Mud Creek-Le Roy [SCREENING],07-24-19/09-05 & 06-19,Moderately Toxic,Non-toxic,30.95,> 100,04-MUCK-4.3,42.961785,-77.966507
+Unnamed Tributary to Genesee River-Wellsville [SCREENING],07-25-19/09-05 & 06-19,Non-toxic,Non-toxic,77.69,> 100,04-UGNS_T186-0.1,42.102116,-77.938592
+Unnamed Tributary to Marsh Creek-West Union [SCREENING],07-25-19/09-05 & 06-19,Non-toxic,Non-toxic,60.28,> 100,04-MARH_T13-1.9,42.045300,-77.720600
+Genesee River-N/A [SCREENING],07-24-19/09-05 & 06-19,Slightly Toxic,Non-toxic,47.15,> 100,04-UGNS-97.8,42.479779,-78.065036
+Genesee River-Willing [SCREENING],07-25-19/09-05 & 06-19,Moderately Toxic,Non-toxic,21.34,> 100,04-UGNS-146.5,42.026390,-77.904830
+Patterson Gully Creek-Sparta [SCREENING],07-24-19/09-05 & 06-19,Non-toxic,Non-toxic,86.13,> 100,04-PATG-0.3,42.610270,-77.724970
+Rush Creek-Hume [SCREENING],07-24-19/09-05 & 06-19,Non-toxic,Non-toxic,64.36,> 100,04-RUSH-0.4,42.464559,-78.094946
+Wiscoy Creek-Hume [SCREENING],07-24-19/09-05 & 06-19,Slightly Toxic,Non-toxic,56.64,> 100,04-WCOY-0.7,42.500100,-78.068380
+Unnamed Tributary to South Fork Jaycox Creek-N/A [SCREENING],07-23-19/09-05 & 06-19,Moderately Toxic,Non-toxic,30.27,> 100,04-JCOX_S-3.7,42.794639,-77.770032
+South McMillan Creek-N/A [SCREENING],07-23-19/09-05 & 06-19,Non-toxic,Non-toxic,75.65,> 100,04-MCMI_S-0.5,42.694427,-77.642820
+Conesus Lake Inlet-Conesus [SCREENING],07-23-19/09-05 & 06-19,Non-toxic,Non-toxic,68.28,> 100,04-WCONI-0.6,42.715476,-77.712345
+Genesee River-York [SCREENING],07-24-19/09-05 & 06-19,Slightly Toxic,Non-toxic,58.04,> 100,04-GENS-44.1,42.864352,-77.850347
+Genesee River-Leicester [SCREENING],07-24-19/12-10 & 11-19,Non-toxic,Non-toxic,85.33,> 100,04-UGNS-60.8,42.776770,-77.841160
+Unnamed Tributary to Honeoye Creek-West Bloomfield [SCREENING],07-23-19/09-05 & 06-19,Non-toxic,Non-toxic,83.38,> 100,04-HONY_T13-5.7,42.936450,-77.548280
+Soapstone Creek-N/A [SCREENING],09-18-19/12-05 & 06-19,Non-toxic,Non-toxic,84.14,> 100,09-SOAP-0.8,44.215730,-75.781701
+Raquette River-Massena [SCREENING],09-11-19/12-05 & 06-19,Moderately Toxic,Non-toxic,35.15,> 100,09-RAQU-12.8,44.916670,-74.889170
+Raquette River-Norfolk [SCREENING],09-11-19/12-05 & 06-19,Non-toxic,Non-toxic,> 100,> 100,09-RAQU-21.9,44.819000,-74.988790
+White Creek-N/A [SCREENING],09-11-19/12-05 & 06-19,Slightly Toxic,Toxic,42.55,70.30,09-WHIK-0.8,44.405509,-75.411690
+Oswegatchie River-Ogdensburg [SCREENING],09-17-19/12-05 & 06-19,Non-toxic,Non-toxic,93.54,> 100,09-GTCH-0.8,44.692500,-75.491940
+Trout River-Constable [SCREENING],09-12-19/12-05 & 06-19,Non-toxic,Non-toxic,84.56,> 100,09-TROU-0.6,44.988890,-74.298610
+Salmon River-N/A [SCRENNING],09-12-19/12-05 & 06-19,Slightly Toxic,Non-toxic,41.50,> 100,09-SAL9-12.1,44.929694,-74.370630
+Plum Brook-Norfolk [SCREENING],09-11-19/12-05 & 06-19,Non-toxic,Non-toxic,80.51,> 100,09-PLUB-1.1,44.879419,-74.914756
+Indian River-Croghan [SCREENING],09-10-19/12-05 & 06-19,Non-toxic,Non-toxic,61.24,> 100,09-INDN-92.7,43.971939,-75.290787
+Little River-Little River [SCREENING],09-10-19/12-05 & 06-19,Slightly Toxic,N/A,53.08,N/A,09-LTTL-13.2,44.166190,-75.002150
+East Branch Callicoon Creek-Hortonville [SCREENING],08-21-19/12-10 & 11-19,Non-toxic,Non-toxic,85.24,> 100,14-CALL_E-0.2,41.758330,-75.028610
+Delaware River-Port Jervis [SCREENING],08-20-19/12-10 & 11-19,Non-toxic,Non-toxic,78.09,> 100,14-DELA-1.2,41.372220,-74.697220
+Hurleyville Creek-Fallsburg [SCREENING],08-20-19/12-10 & 11-19,Slightly Toxic,Non-toxic,54.13,> 100,14-HURL-2.8,41.744500,-74.667100
+West Branch Delaware River-Delancey [SCREENING],08-22-19/12-10 & 11-19,Non-toxic,Toxic,> 100,55.27,14-WDEL-51.0,42.209170,-74.974170
+West Branch Mongaup River-Mongaup Valley [SCREENING],08-20-19/12-10 & 11-19,Non-toxic,Non-toxic,92.08,> 100,14-MONG_W-0.2,41.681110,-74.775000
+Willowemoc Creek-Willowemoc [SCREENING],08-21-19/12-10 & 11-19,Non-toxic,Toxic,64.00,63.54,14-WILL-18.3,41.918080,-74.670690
+Willowemoc Creek-Rockland [SCREENING],08-21-19/12-10 & 11-19,Non-toxic,Non-toxic,98.36,> 100,14-WILL-3.1,41.924410,-74.876370
+Unnamed Tributary to Town Brook-Stamford [SCREENING],08-22-19/12-10 & 11-19,Non-toxic,Non-toxic,88.02,> 100,14-TOWN_T11-0.2,42.354719,-74.601596
+Beers Brook-N/A [SCREENING],08-21-19/12-10 & 11-19,Non-toxic,Non-toxic,100,> 100,14-BEEB-3.5,42.119651,-75.108847
+Middle Mongaup River-Bushville [SCREENING],08-20-19/12-10 & 11-19,Non-toxic,Non-toxic,100,> 100,14-MONG_M-0.3,41.707610,-74.740790
+Pochuck Creek-Warwick [SPECIAL STUDY],08-08-19/12-05 & 06-19,Non-toxic,Non-toxic,92.37,> 100,13-POCH-1.8,41.300424,-74.472241
+Tin Brook-Montgomery [SPECIAL STUDY],08-08-19/12-05 & 06-19,Moderately Toxic,Non-toxic,20.56,> 100,13-TINW-0.5,41.573251,-74.183530
+Dwaar Kill-Shawangunk [SPECIAL STUDY],08-14-19/12-05 & 06-19,Moderately Toxic,Toxic,23.32,78.23,13-DWAR-2.0,41.624440,-74.199450
+Platte Kill-New Paltz [SPECIAL STUDY],08-08-19/12-05 & 06-19,Non-toxic,Non-toxic,69.38,> 100,13-PKIL-0.4,41.725280,-74.104720
+Rutgers Creek-Wawayanda [SPECIAL STUDY],08-08-19/12-05 & 06-19,Non-toxic,N/A,70.45,N/A,13-RUTG-1.5,41.335792,-74.487986
+Swarte Kill-Esopus [SPECIAL STUDY],08-08-19/12-05 & 06-19,Non-toxic,Non-toxic,86.19,> 100,13-SWAK-1.7,41.832418,-74.031699
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,

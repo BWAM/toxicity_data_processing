@@ -1,0 +1,93 @@
+station,Sediment.Collection.Test.Date,Sediment.Assessment,Porewater.Assessment,Sediment.EC50....,Porewater.EC50....,stationID,Latitude,Longitude
+Mill Brook-Putnam [SCREENING],07-19-18/08-02 & 03-18,Non-toxic,Non-toxic,69.10,> 100,10-CMIL-3.3,43.722130000,-73.418300000
+East Branch Ausable Creek-Jay [SCREENING],07-18-18/08-02 & 03-18,Severely Toxic,Non-toxic,17.54,> 100,10-SABL_E-7.6,44.366064150,-73.733144260
+Rocky Branch Brook-Jay [SCREENING],07-18-18/08-02 & 03-18,Moderately Toxic,Non-toxic,37.41,> 100,10-ROCY-0.1,44.370998000,-73.716428000
+LaChute River-Ticonderoga [SCREENING],07-19-18/08-02 & 03-18,Slightly Toxic,Non-toxic,58.40,> 100,10-LCHU-2.0,43.849400000,-73.421100000
+Rush Creek Outlet-Queensbury [SCREENING],07-19-18/08-02 & 03-18,Moderately Toxic,Non-toxic,25.46,> 100,10-ROUT-1.3,43.349880000,-73.692710000
+Two Bridge Brook-Bloomingdale [SCREENING],07-18-18/08-02 & 03-18,Moderately Toxic,Non-toxic,29.46,> 100,10-TWOB-3.6,44.412307000,-74.111324000
+Salmon River-Plattsburgh [SCREENING],07-17-18/08-02 & 03-18,Slightly Toxic,Non-toxic,48.52,> 100,10-SAMN-4.2,44.640552000,-73.494990000
+Unnamed Tributary Lake George-Bolton [SCREENING],07-19-18/08-02 & 03-18,Non-toxic,Non-toxic,69.58,> 100,10-LGEO_T62-0.2,43.611000000,-73.628000000
+Lower Glen Creek-Queensbury [SCREENING],07-19-18/08-02 & 03-18,Slightly Toxic,Non-toxic,51.23,> 100,10-LGLN-0.5,43.377000000,-73.615700000
+Little Chazy River-Chazy [SCREENING],07-17-18/08-02 & 03-18,Non-toxic,Non-toxic,65.31,> 100,10-LCHZ-2.4,44.901700000,-73.415000000
+Smith Brook-Diamond Point [SCREENING],07-19-18/08-02 & 03-18,Moderately Toxic,Non-toxic,35.71,> 100,10-SMIB-0.5,43.479170000,-73.687230000
+West Brook-Lake George [SCREENING],07-19-18/08-02 & 03-18,Slightly Toxic,Non-toxic,46.50,> 100,10-WSBR-0.2,43.418497980,-73.710231860
+Payne Creek-Hamilton [SCREENING],08-07-18/08-28-18,Slightly Toxic,Non-toxic,46.27,> 100,06-PAYN-0.4,42.790800000,-75.561900000
+Otter Creek-Cortland [SCREENING],08-08-18/08-28-18,Non-toxic,Non-toxic,93.12,> 100,06-OTTC-0.2,42.607220000,-76.182500000
+Butternut Creek-Morris [SCREENING],08-09-18/08-28-18,Non-toxic,Non-toxic,90.00,> 100,06-BTNT_T-12.0,42.511715690,-75.276166690
+Otego Creek-Laurens [SCREENING],08-09-18/08-28-18,Slightly Toxic,Non-toxic,59.32,> 100,06-OTGO-10.8,42.532130000,-75.084070000
+Unadilla River-Guilford [SCREENING],08-09-18/08-28-18,Slightly Toxic,Non-toxic,55.26,> 100,06-DILA-5.4,42.377200000,-75.405000000
+Tioughnioga River-Cortlandville [SCREENING],08-08-18/08-28-18,Moderately Toxic,Non-toxic,23.47,> 100,06-TOGH-29.8,42.568100000,-76.121700000
+North Winfield Creek-Winfield [SCREENING],08-07-18/08-28-18,Slightly Toxic,Non-toxic,51.73,> 100,06-NWIN-0.2,42.884170000,-75.188610000
+Schenevus Creek-Milford [SCREENING],08-09-18/08-28-18,Non-toxic,Non-toxic,60.83,> 100,06-NVUS-0.9,42.485600000,-74.969400000
+Schenevus Creek-Maryland [SCREENING],08-09-18/08-28-18,Non-toxic,Non-toxic,66.71,> 100,06-NVUS-6.4,42.524226000,-74.898842000
+Beaver Brook-Oyster Bay [SCREENING],09-11-18/10-30 & 31-18,Non-toxic,Non-toxic,76.55,> 100,17-BVBR-0.3,40.878102000,-73.565952000
+Valley Stream-Hempstead [SCREENING],09-12-18/10-30 & 31-18,Moderately Toxic,Non-toxic,20.15,> 100,17-VALL-0.2,40.673100000,-73.697600000
+Unnamed Tributary Cold Spring Harbor-Huntington [SCREENING],09-11-18/10-30 & 31-18,Slightly Toxic,Non-toxic,50.70,> 100,17-CSHA-1.9,40.841470000,-73.455220000
+Tuthills Creek-Brookhaven [SCREENING],09-12-18/10-30 & 31-18,Slightly Toxic,Non-toxic,49.68,> 100,17-TUTL-2.1,40.776756070,-73.034649690
+Carmans River-Brookhaven [SCREENING],09-12-18/10-30 & 31-18,Moderately Toxic,Non-toxic,31.01,> 100,17-CARM-9.0,40.830000000,-72.906900000
+Peconic River-Riverhead [SCREENING],09-12-18/10-30 & 31-18,Non-toxic,Non-toxic,85.23,> 100,17-PECN-7.6,40.905543000,-72.743042000
+Mill River-Hempstead [SCREENING],09-11-18/10-30 & 31-18,Non-toxic,Non-toxic,84.30,> 100,17-MILR-5.3,40.704310000,-73.658100000
+Sawmill Creek-Riverhead [SCREENING],09-12-18/10-30 & 31-18,Non-toxic,Non-toxic,84.51,> 100,17-SWML-1.4,40.925280000,-72.649720000
+Carls River-Babylon [SCREENING],09-12-18/10-30 & 31-18,Non-toxic,Non-toxic,83.05,> 100,17-CARL-1.8,40.715560000,-73.329170000
+Tributary Peconic River-Riverhead [SCREENING],09-12-18/10-30 & 31-18,Non-toxic,Non-toxic,95.14,> 100,17-PECN-_T6-0.8,40.890780000,-72.806950000
+Penataquit Creek-Islip [SCREENING],09-12-18/10-30 & 31-18,Moderately Toxic,Non-toxic,38.81,> 100,17-PENA-1.4,40.730280000,-73.244160000
+East Meadow Creek-Hempstead [SCREENING],09-12-18/10-30 & 31-18,Moderately Toxic,Non-toxic,32.31,> 100,17-EMED-0.4,40.664830000,-73.569850000
+Orowic Creek-Islip [SCREENING],09-12-18/10-30 & 31-18,Slightly Toxic,Non-toxic,58.03,> 100,17-OROW-2.0,40.751098000,-73.228009000
+Bronx River-New York [SCREENING],09-11-18/10-30 & 31-18,Slightly Toxic,Non-toxic,54.12,> 100,17-BRNX-5.6,40.879787780,-73.869480050
+Sampawams Creek-Islip [SCREENING],09-12-18/10-30 & 31-18,Non-toxic,Non-toxic,61.56,> 100,17-SAMP-0.4,40.703300000,-73.318600000
+Bronx River-White Plains [SCREENING],09-11-18/10-30 & 31-18,Non-toxic,Non-toxic,79.99,> 100,17-BRNX-17.3,41.023968330,-73.782794410
+Ramapo River-Monroe [SPECIAL STUDY],08-22-18/10-11-18,Severely Toxic,Non-toxic,6.842,> 100,15-RAMA_T25_3-0.2,41.335030000,-74.161460000
+Ramapo River-Ramapo [SPECIAL STUDY],08-21-18/10-11-18,Severely Toxic,Non-toxic,13.78,> 100,15-RAMA-16.5,41.310000000,-74.142780000
+Ramapo River-Ramapo [SPECIAL STUDY],08-21-18/10-11-18,Severely Toxic,Non-toxic,19.64,> 100,15-RAMA-16.1,41.307220000,-74.136950000
+Ramapo River-Ramapo [SPECIAL STUDY],08-21-18/10-11-18,Slightly Toxic,Non-toxic,44.05,> 100,15-RAMA-1.1,41.125160000,-74.164550000
+Ramapo River-Monroe [SPECIAL STUDY],09-06-18/10-11-18,Non-toxic,Non-toxic,68.75,> 100,15-RAMA-18.6,41.323770000,-74.172300000
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,

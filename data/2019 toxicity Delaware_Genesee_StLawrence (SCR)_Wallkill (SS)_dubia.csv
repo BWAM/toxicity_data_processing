@@ -1,0 +1,37 @@
+station,Water.Collection.Test.Start.Date,Reproductive.Rate..Young..U.2640..7days....Control.,X..Survival..7.days.,Assessment,stationID,Latitude,Longitude
+Canaseraga Creek @ Mount Morris [ROUTINE],04-15-19/04-19-19,18.4 (120),100,Non-toxic,04-RAGA-1.4,42.735980000,?77.841840000
+Delaware River @ Port Jervis [ ROUTINE],04-17-19/04-19-19,**3.6 (24),80,Slightly Toxic,14-DELA-1.3,41.372220000,?74.697220000
+Genesee River @ Rochester [ROUTINE],04-16-19/04-19-19,18.6 (122),90,Non-toxic,04-GENS-2.6,43.227220000,?77.616390000
+Grass River @ Madrid [ROUTINE],04-15-19/04-19-19,**11.3 (65),100,Slightly Toxic,09-GRAS-7.8,44.846933000,?75.078952000
+Little Salmon River @ Bombay [ROUTINE],04-16-19/04-19-19,**11.1 (64),80,Slightly Toxic,09-LSAL-7.6,44.939851000,?74.556944000
+Neversink River @ Deerpark [ROUTINE],04-17-19/04-19-19,**3.1 (18),*40,Severely Toxic,14-NEVR-8.9,41.442200000,?74.600200000
+Oswegatchie River @ Canton [ROUTINE],04-15-19/04-19-19,**7.3 (42),100,Slightly Toxic,09-GTCH-17.7,44.589251000,?75.321112000
+Upper Genesee River @ Wellsville [ROUTINE],04-16-19/04-19-19,12.9 (75),100,Non-toxic,04-UGNS-137.8,42.118660000,?77.946540000
+West Branch Delaware River @ Deposit [ ROUTINE],04-17-19/04-19-19,**4.3 (28),90,Slightly Toxic,14-WDEL-16.2,42.080000000,?75.401390000
+Canaseraga Creek @ Mount Morris [ROUTINE],06-10-19/06-14-19,27.7 (147),100,Non-toxic,04-RAGA-1.4,42.735980000,?77.841840000
+Delaware River @ Port Jervis [ ROUTINE],06-12-19/06-14-19,**7.8 (42),90,Slightly Toxic,14-DELA-1.3,41.372220000,?74.697220000
+Genesee River @ Rochester [ROUTINE],06-11-19/06-14-19,21.2 (113),100,Non-toxic,04-GENS-2.6,43.227220000,?77.616390000
+Grass River @ Madrid [ROUTINE],06-10-19/06-14-19,**8.0 (44),90,Slightly Toxic,09-GRAS-7.8,44.846933000,?75.078952000
+Little Salmon River @ Bombay [ROUTINE],06-12-19/06-14-19,17.0 (94),100,Non-toxic,09-LSAL-7.6,44.939851000,?74.556944000
+Neversink River @ Deerpark [ROUTINE],06-12-19/06-14-19,**7.8 (43),90,Slightly Toxic,14-NEVR-8.9,41.442200000,?74.600200000
+Oswegatchie River @ Canton [ROUTINE],06-10-19/06-14-19,**6.3 (35),90,Slightly Toxic,09-GTCH-17.7,44.589251000,?75.321112000
+Upper Genesee River @ Wellsville [ROUTINE],06-12-19/06-14-19,16.4 (87),100,Non-toxic,04-UGNS-137.8,42.118660000,?77.946540000
+West Branch Delaware River @ Deposit [ ROUTINE],06-10-19/06-14-19,12.8 (68),90,Non-toxic,14-WDEL-16.2,42.080000000,?75.401390000
+Canaseraga Creek @ Mount Morris [ROUTINE],08-13-19/08-16-19,18.1 (91),100,Non-toxic,04-RAGA-1.4,42.735980000,?77.841840000
+Delaware River @ Port Jervis [ ROUTINE],08-14-19/08-16-19,**2.9 (15),*50,Severely Toxic,14-DELA-1.3,41.372220000,?74.697220000
+Genesee River @ Rochester [ROUTINE],08-14-19/08-16-19,**7.3 (37),100,Slightly Toxic,04-GENS-2.6,43.227220000,?77.616390000
+Grass River @ Madrid [ROUTINE],08-14-19/08-16-19,**5.8 (35),90,Slightly Toxic,09-GRAS-7.8,44.846933000,?75.078952000
+Little Salmon River @ Bombay [ROUTINE],08-14-19/08-16-19,15.0 (90),90,Non-toxic,09-LSAL-7.6,44.939851000,?74.556944000
+Neversink River @ Deerpark [ROUTINE],08-14-19/08-16-19,**8.2 (49),100,Slightly Toxic,14-NEVR-8.9,41.442200000,?74.600200000
+Oswegatchie River @ Canton [ROUTINE],08-14-19/08-16-19,**7.7 (46),100,Slightly Toxic,09-GTCH-17.7,44.589251000,?75.321112000
+Upper Genesee River @ Wellsville [ROUTINE],08-13-19/08-16-19,**7.9 (40),100,Slightly Toxic,04-UGNS-137.8,42.118660000,?77.946540000
+West Branch Delaware River @ Deposit [ ROUTINE],08-14-19/08-16-19,**4.6 (23),*30,Severely Toxic,14-WDEL-16.2,42.080000000,?75.401390000
+Canaseraga Creek @ Mount Morris [ROUTINE],10-21-19/10-25-19,32.8 (88),100,Non-toxic,04-RAGA-1.4,42.735980000,?77.841840000
+Delaware River @ Port Jervis [ ROUTINE],10-24-19/10-25-19,**17.3 (47),100,Slightly Toxic,14-DELA-1.3,41.372220000,?74.697220000
+Genesee River @ Rochester [ROUTINE],10-21-19/10-25-19,34.7 (94),100,Non-toxic,04-GENS-2.6,43.227220000,?77.616390000
+Grass River @ Madrid [ROUTINE],10-21-19/10-25-19,**15.0 (48),100,Slightly Toxic,09-GRAS-7.8,44.846933000,?75.078952000
+Little Salmon River @ Bombay [ROUTINE],10-21-19/10-25-19,27.0 (85),100,Non-toxic,09-LSAL-7.6,44.939851000,?74.556944000
+Neversink River @ Deerpark [ROUTINE],10-24-19/10-25-19,**20.7 (67),80,Slightly Toxic,14-NEVR-8.9,41.442200000,?74.600200000
+Oswegatchie River @ Canton [ROUTINE],10-21-19/10-25-19,**14.1 (45),100,Slightly Toxic,09-GTCH-17.7,44.589251000,?75.321112000
+Upper Genesee River @ Wellsville [ROUTINE],10-23-19/10-25-19,**21.5 (58),90,Slightly Toxic,04-UGNS-137.8,42.118660000,?77.946540000
+West Branch Delaware River @ Deposit [ ROUTINE],10-23-19/10-25-19,**27.1 (73),100,Slightly Toxic,14-WDEL-16.2,42.080000000,?75.401390000
