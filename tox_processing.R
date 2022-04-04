@@ -4,10 +4,10 @@
 
 #read in the 2020 file
 
-#raw<-readxl::read_excel("C:/Users/kareynol/New York State Office of Information Technology Services/SMAS - Streams Data Modernization/to_be_cleaned/2020_data/toxicity/SMAS Reporting_2020 Mohawk_Niagara_Erie_Ontario(SCR)_Ramapo(SS).xlsx",sheet="all")
+#raw<-readxl::read_excel("C:/Users/kareynol/New York State Office of Information Technology Services/SMAS - Streams Data Modernization/to_be_cleaned/2021_data/SMAS Reporting_TTU Data_2021 Allegheny_SenecaOswego_UpperHudson (SCR)_Ramapo (SS).xlsx",sheet="all")
 
 library(readxl)
-path <- "C:/Users/kareynol/New York State Office of Information Technology Services/SMAS - Streams Data Modernization/to_be_cleaned/2020_data/toxicity/SMAS Reporting_2020 Mohawk_Niagara_Erie_Ontario(SCR)_Ramapo(SS).xlsx"
+path <- "C:/Users/kareynol/New York State Office of Information Technology Services/SMAS - Streams Data Modernization/to_be_cleaned/2021_data/toxicity/SMAS Reporting_TTU Data_2021 Allegheny_SenecaOswego_UpperHudson (SCR)_Ramapo (SS).xlsx"
 sheetnames <- readxl::excel_sheets(path)
 mylist <- lapply(readxl::excel_sheets(path), readxl::read_excel, path = path)
 
@@ -16,8 +16,10 @@ names(mylist) <- sheetnames
 
 
 #first combine the two that are microtox (ras and screening)
+#2021 there is just routine
 
-microtox<-rbind(mylist$`Microtox_Data Table`,mylist$`Ramapo RAS`)
+#microtox<-rbind(mylist$`Microtox_Data Table`,mylist$`Ramapo RAS`)
+microtox<-mylist$`C.dubia_Data Table`
 
 #split the dates out
 library(tidyr)
@@ -137,18 +139,24 @@ w.all<-w.all %>%
 
 
 #repro-rate columns
-w.all$TWR_PCT_CTRL<-gsub(".*\\((.*)\\).*", "\\1", w.all$Reproductive.Rate..Young..U.2640..7days....Control.)
-w.all$TWR_REPRODUCTIVE_RATE<- str_extract(w.all$Reproductive.Rate..Young..U.2640..7days....Control., pattern =  "[^()]+\\(")[]
+#w.all$TWR_PCT_CTRL<-gsub(".*//((.*)//).*", "//1", w.all$Reproductive.Rate..Young..U.2640..7days....Control.)
+w.all$TWR_PCT_CTRL<-gsub("//([^()]*//)", "", w.all$Reproductive.Rate..Young..U.2640..7days....Control.)
+#w.all$TWR_REPRODUCTIVE_RATE<-stringr::str_extract(w.all$Reproductive.Rate..Young..U.2640..7days....Control., pattern =  "[^()]+//(")
+
+w.all$TWR_REPRODUCTIVE_RATE<-gsub("//(([^()]*)//)|.", "//1", w.all$Reproductive.Rate..Young..U.2640..7days....Control.,
+                                  perl=T)
+
+
 
 #remove stray characters
-w.all$TWR_REPRODUCTIVE_RATE<-str_remove(w.all$TWR_REPRODUCTIVE_RATE,"[(]")
-w.all$TWR_REPRODUCTIVE_RATE<-str_remove(w.all$TWR_REPRODUCTIVE_RATE,"[****]")
+w.all$TWR_REPRODUCTIVE_RATE<-stringr::str_remove(w.all$TWR_REPRODUCTIVE_RATE,"[(]")
+w.all$TWR_REPRODUCTIVE_RATE<-stringr::str_remove(w.all$TWR_REPRODUCTIVE_RATE,"[****]")
 #make sure there are no remaining white spaces
 w.all$TWR_REPRODUCTIVE_RATE<-trimws(w.all$TWR_REPRODUCTIVE_RATE)
 
 #do the same with the survival items
 w.all$TWR_PCT_SURVIVAL<-paste(w.all$X..Survival..7.days.)
-w.all$TWR_PCT_SURVIVAL<-str_remove(w.all$TWR_PCT_SURVIVAL,"[*****]") #had to hit this a couple times
+w.all$TWR_PCT_SURVIVAL<-stringr::str_remove(w.all$TWR_PCT_SURVIVAL,"[*****]") #had to hit this a couple times
 
 w.all<-w.all %>% 
   rename("TWR_ASSESSMENT"=Assessment)
@@ -195,17 +203,18 @@ final.water<-final.water %>%
   rename(TWR_EVENT_SMAS_SAMPLE_DATE=TWR_COLLECTION_DATE)
 
 #remove any stray *
-final.water$TWR_REPRODUCTIVE_RATE<-str_remove(final.water$TWR_REPRODUCTIVE_RATE,"[****]")
+final.water$TWR_REPRODUCTIVE_RATE<-stringr::str_remove(final.water$TWR_REPRODUCTIVE_RATE,"[****]")
+final.water$TWR_PCT_CTRL<-stringr::str_remove(final.water$TWR_PCT_CTRL,"[**]")
 
 #write to csv
-write.csv(final.water,"outputs/20210503_S_TOXICITY_WATER_RESULT_append.csv",row.names = FALSE)
+write.csv(final.water,"outputs/20220324_S_TOXICITY_WATER_RESULT_append.csv",row.names = FALSE)
 
 #write the final tables
 #read in the old dta
 sediment.old<-read.csv("data/20201014_S_TOXICITY_SEDIMENT_RESULT.csv")
 sediment.old<-sediment.old %>% 
   rename(EVENT_SMAS_ID=TSR_EVENT_SMAS_HISTORY_ID)
-water.old <- read.csv("data/20201014_S_TOXICITY_WATER_RESULT.csv")
+water.old <- read.csv("C:/Users/kareynol/New York State Office of Information Technology Services/SMAS - Streams Data Modernization/Cleaned Files/Final_Toxicity_ITS/MASTER_S_TOXICITY_WATER_RESULT.csv")
 water.old<-water.old %>% 
   rename(EVENT_SMAS_ID=TWR_EVENT_SMAS_HISTORY_ID)
 
