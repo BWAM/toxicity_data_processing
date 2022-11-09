@@ -19,13 +19,13 @@ names(mylist) <- sheetnames
 #2021 there is just routine
 
 #microtox<-rbind(mylist$`Microtox_Data Table`,mylist$`Ramapo RAS`)
-microtox<-mylist$`C.dubia_Data Table`
+microtox<-mylist$`Microtox_Data Table`
 
 #split the dates out
 library(tidyr)
 sed.all<-microtox
 
-sed.all<-separate(sed.all,Sediment.Collection.Test.Date,
+sed.all<-tidyr::separate(sed.all,Sediment.Collection.Test.Date,
                   c("TSR_COLLECTION_DATE","TSR_SED_TEST_DATE"),
                   sep = "/")
 sed.all<-separate(sed.all,TSR_SED_TEST_DATE,c("TSR_SED_TEST_DATE","TSR_POREWATER_TEST_DATE"),
