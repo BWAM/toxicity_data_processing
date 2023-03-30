@@ -7,7 +7,7 @@
 #raw<-readxl::read_excel("C:/Users/kareynol/New York State Office of Information Technology Services/SMAS - Streams Data Modernization/to_be_cleaned/2021_data/SMAS Reporting_TTU Data_2021 Allegheny_SenecaOswego_UpperHudson (SCR)_Ramapo (SS).xlsx",sheet="all")
 
 library(readxl)
-path <- "C:/Users/kareynol/New York State Office of Information Technology Services/SMAS - Streams Data Modernization/to_be_cleaned/2021_data/toxicity/SMAS Reporting_TTU Data_2021 Allegheny_SenecaOswego_UpperHudson (SCR)_Ramapo (SS).xlsx"
+path <- here::here("data/2022_water.xlsx")
 sheetnames <- readxl::excel_sheets(path)
 mylist <- lapply(readxl::excel_sheets(path), readxl::read_excel, path = path)
 
@@ -67,7 +67,9 @@ sed.all$date<-format(sed.all$date,"%Y%m%d")
 
 sed.all$Porewater.EC50....<-stringr::str_remove(sed.all$Porewater.EC50....,">")
 sed.all<-sed.all %>% 
-  mutate(TSR_SEDIMENT_RSLT_QLFR="",TSR_POREWATER_RSLT_QLFR="",EVENT_SMAS_ID=paste(stationID,date,sep = "_")) %>% 
+  mutate(TSR_SEDIMENT_RSLT_QLFR="",
+         TSR_POREWATER_RSLT_QLFR="",
+         EVENT_SMAS_ID=paste(stationID,date,sep = "_")) %>% 
   rename("TSR_SEDIMENT_ASMT"=Sediment.Assessment,
          "TSR_POREWATER_ASMT"=Porewater.Assessment,
          "TSR_SEDIMENT_RSLT"=Sediment.EC50....,
@@ -103,7 +105,7 @@ sed.final$TSR_SEDIMENT_RSLT<-as.numeric(sed.final$TSR_SEDIMENT_RSLT)
 sed.final<-sed.final %>% 
   mutate_if(is.numeric,round,2)
 
-write.csv(sed.final,"outputs/20210503_S_TOXICITY_SEDIMENT_RESULT_append.csv",row.names = FALSE)
+write.csv(sed.final,"outputs/20230330_S_TOXICITY_SEDIMENT_RESULT_append.csv",row.names = FALSE)
 ##########################################################
 #C dubia tables
 w.all<-mylist$`C.dubia_Data Table`
@@ -137,19 +139,24 @@ w.all$EVENT_SMAS_ID<-paste(w.all$stationID)
 w.all<-w.all %>% 
   filter(stationID!="NA")
 
+#reproductive rate columns - this includes PCT_CTRL and REPRO_RATE
+#in nikki's results, the column is combined, the [18.4 (120)] 
+#the first number is the TWR_REPRODUCTIVE_RATE
+#the one in parenthesis is TWR_PCT_CTRL
 
-#repro-rate columns
-#w.all$TWR_PCT_CTRL<-gsub(".*//((.*)//).*", "//1", w.all$Reproductive.Rate..Young..U.2640..7days....Control.)
-w.all$TWR_PCT_CTRL<-gsub("//([^()]*//)", "", w.all$Reproductive.Rate..Young..U.2640..7days....Control.)
-#w.all$TWR_REPRODUCTIVE_RATE<-stringr::str_extract(w.all$Reproductive.Rate..Young..U.2640..7days....Control., pattern =  "[^()]+//(")
+w.all$Reproductive.Rate..Young..U.2640..7days....Control._paste<-paste(
+  w.all$Reproductive.Rate..Young..U.2640..7days....Control.
+)
 
-w.all$TWR_REPRODUCTIVE_RATE<-gsub("//(([^()]*)//)|.", "//1", w.all$Reproductive.Rate..Young..U.2640..7days....Control.,
-                                  perl=T)
+w.all<-w.all %>% 
+  separate(Reproductive.Rate..Young..U.2640..7days....Control.,
+           c("TWR_REPRODUCTIVE_RATE", "TWR_PCT_CTRL"),
+           " ")
 
 
-
-#remove stray characters
-w.all$TWR_REPRODUCTIVE_RATE<-stringr::str_remove(w.all$TWR_REPRODUCTIVE_RATE,"[(]")
+# #remove stray characters
+w.all$TWR_PCT_CTRL<-stringr::str_remove(w.all$TWR_PCT_CTRL,"[(]")
+w.all$TWR_PCT_CTRL<-stringr::str_remove(w.all$TWR_PCT_CTRL,"[)]")
 w.all$TWR_REPRODUCTIVE_RATE<-stringr::str_remove(w.all$TWR_REPRODUCTIVE_RATE,"[****]")
 #make sure there are no remaining white spaces
 w.all$TWR_REPRODUCTIVE_RATE<-trimws(w.all$TWR_REPRODUCTIVE_RATE)
@@ -157,6 +164,7 @@ w.all$TWR_REPRODUCTIVE_RATE<-trimws(w.all$TWR_REPRODUCTIVE_RATE)
 #do the same with the survival items
 w.all$TWR_PCT_SURVIVAL<-paste(w.all$X..Survival..7.days.)
 w.all$TWR_PCT_SURVIVAL<-stringr::str_remove(w.all$TWR_PCT_SURVIVAL,"[*****]") #had to hit this a couple times
+w.all$TWR_PCT_SURVIVAL<-as.numeric(w.all$TWR_PCT_SURVIVAL)
 
 w.all<-w.all %>% 
   rename("TWR_ASSESSMENT"=Assessment)
@@ -164,21 +172,21 @@ w.all<-w.all %>%
 #split them apart
 w.qlfy<-w.all %>% 
   filter(grepl("***",X..Survival..7.days.,fixed = TRUE))#give them the qualifier
-w.qlfy$TWR_PCT_CTRL_QLFR<-"T"
-w.qlfy$TWR_REPRODUCTIVE_RATE_QLFR<-"F"
+w.qlfy$TWR_PCT_CTRL_QLFR<-"TRUE"
+w.qlfy$TWR_REPRODUCTIVE_RATE_QLFR<-"FALSE"
 
 
 w.all<-w.all %>% 
   filter(!grepl("**",X..Survival..7.days.,fixed=TRUE)) %>% 
-  mutate(TWR_REPRODUCTIVE_RATE_QLFR="F")
+  mutate(TWR_REPRODUCTIVE_RATE_QLFR="FALSE")
 
 w.all$TWR_REPRODUCTIVE_SIG<-ifelse(
-  grepl("**",w.all$Reproductive.Rate..Young..U.2640..7days....Control.,fixed = TRUE),"T","F"
+  grepl("**",w.all$Reproductive.Rate..Young..U.2640..7days....Control._paste,fixed = TRUE),"TRUE","FALSE"
 )
 w.all$TWR_SURVIVAL_SIG<-ifelse(
-  grepl("**",w.all$X..Survival..7.days.,fixed = TRUE),"T","F"
+  grepl("**",w.all$X..Survival..7.days.,fixed = TRUE),"TRUE","FALSE"
 )
-w.all$TWR_PCT_CTRL_QLFR<-"F"
+w.all$TWR_PCT_CTRL_QLFR<-"FALSE"
 
 w.all.f<-rbind(w.all,w.qlfy)#bind them together
 
@@ -207,23 +215,23 @@ final.water$TWR_REPRODUCTIVE_RATE<-stringr::str_remove(final.water$TWR_REPRODUCT
 final.water$TWR_PCT_CTRL<-stringr::str_remove(final.water$TWR_PCT_CTRL,"[**]")
 
 #write to csv
-write.csv(final.water,"outputs/20220324_S_TOXICITY_WATER_RESULT_append.csv",row.names = FALSE)
+write.csv(final.water,"outputs/20230330_S_TOXICITY_WATER_RESULT_append.csv",row.names = FALSE)
 
 #write the final tables
 #read in the old dta
-sediment.old<-read.csv("data/20201014_S_TOXICITY_SEDIMENT_RESULT.csv")
-sediment.old<-sediment.old %>% 
-  rename(EVENT_SMAS_ID=TSR_EVENT_SMAS_HISTORY_ID)
+sediment.old<-read.csv("C:/Users/kareynol/New York State Office of Information Technology Services/SMAS - Streams Data Modernization/Cleaned Files/Final_Toxicity_ITS/MASTER_S_TOXICITY_SEDIMENT_RESULT.csv")
+# sediment.old<-sediment.old %>% 
+#   rename(EVENT_SMAS_ID=TSR_EVENT_SMAS_HISTORY_ID)
 water.old <- read.csv("C:/Users/kareynol/New York State Office of Information Technology Services/SMAS - Streams Data Modernization/Cleaned Files/Final_Toxicity_ITS/MASTER_S_TOXICITY_WATER_RESULT.csv")
-water.old<-water.old %>% 
-  rename(EVENT_SMAS_ID=TWR_EVENT_SMAS_HISTORY_ID)
+# water.old<-water.old %>% 
+#   rename(EVENT_SMAS_ID=TWR_EVENT_SMAS_HISTORY_ID)
 
 #bind to the 2020 data
 master.sed<-rbind(sediment.old,sed.final)
 master.water<-rbind(water.old,final.water)
 
 #write to csv
-write.csv(master.sed,"outputs/MASTER_S_TOXICITY_SEDIMENT_RESULT.csv",row.names = FALSE)
-write.csv(master.water,"outputs/MASTER_S_TOXICITY_WATER_RESULT.csv",row.names = FALSE)
+write.csv(master.sed,"outputs/2023_03_30_MASTER_S_TOXICITY_SEDIMENT_RESULT.csv",row.names = FALSE)
+write.csv(master.water,"outputs/2023_03_30_MASTER_S_TOXICITY_WATER_RESULT.csv",row.names = FALSE)
 
           
